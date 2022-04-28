@@ -1,72 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  android:orientation="vertical"
-  android:layout_width="match_parent"
-  android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-  <android.support.v7.widget.Toolbar
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/readerToolbar"
-    android:layout_height="wrap_content"
-    android:layout_width="match_parent" />
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/readerToolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
     <!-- android:minHeight="?android:attr/actionBarSize" -->
     <!-- android:background="?android:attr/colorPrimary" -->
 
-  <TextView
-    android:id="@+id/nodeTitleLbl"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:textSize="16sp"
-    android:text="INSERT QUESTION HERE" />
-
-  <FrameLayout
-    android:id="@+id/nodeViewHolder"
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:layout_weight="1"
-    android:layout_marginBottom="10dp"
-    android:layout_marginTop="10dp"
-    android:background="@android:color/transparent"
-    android:cacheColorHint="@android:color/transparent">
-  </FrameLayout>
-
-  <TableLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:padding="10dp"
-    android:stretchColumns="0,2">
-    <TableRow>
-      <ImageButton
-        android:id="@+id/backBtn"
-        android:layout_width="0dp"
+    <TextView
+        android:id="@+id/nodeTitleLbl"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="left"
+        android:textSize="16sp"
+        android:text="INSERT QUESTION HERE" />
+
+    <FrameLayout
+        android:id="@+id/nodeViewHolder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="1"
-        android:src="@drawable/btn_back_selector"
-        android:background="@android:color/transparent" />
-      <TextView
-        android:id="@+id/revealedLbl"
-        android:layout_width="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"></FrameLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:stretchColumns="0,2">
+
+        <TableRow>
+
+            <ImageButton
+                android:id="@+id/backBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:src="@drawable/btn_back_selector"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:id="@+id/revealedLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:text="" />
+
+            <ImageButton
+                android:id="@+id/forwardBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:src="@drawable/btn_forward_selector"
+                android:background="@android:color/transparent" />
+        </TableRow>
+    </TableLayout>
+
+    <ImageButton
+        android:id="@+id/revealNextBtn"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textSize="16sp"
-        android:text="" />
-      <ImageButton
-        android:id="@+id/forwardBtn"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:layout_weight="1"
-        android:src="@drawable/btn_forward_selector"
+        android:src="@drawable/btn_show_next_selector"
         android:background="@android:color/transparent" />
-    </TableRow>
-  </TableLayout>
-
-  <ImageButton
-    android:id="@+id/revealNextBtn"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center"
-    android:src="@drawable/btn_show_next_selector"
-    android:background="@android:color/transparent" />
 </LinearLayout>
