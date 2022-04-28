@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="android-reader/src/main/res/drawable/btn_back_selector.xml" value="0.153" />
+        <entry key="android-reader/src/main/res/layout/reader.xml" value="0.1" />
       </map>
     </option>
   </component>

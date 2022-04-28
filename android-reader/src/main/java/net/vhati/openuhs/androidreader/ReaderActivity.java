@@ -3,9 +3,9 @@ package net.vhati.openuhs.androidreader;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.content.IntentCompat;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import androidx.core.content.IntentCompat;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import android.text.SpannableString;
 import android.text.util.Linkify;
 import android.view.Menu;
@@ -143,7 +143,7 @@ public class ReaderActivity extends AppCompatActivity implements UHSReaderNavCtr
 
                 // Suppress a lint error (unrecognized IntentCompat flag) with a comment.
                 //noinspection WrongConstant
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | IntentCompat.FLAG_ACTIVITY_CLEAR_TASK | IntentCompat.FLAG_ACTIVITY_TASK_ON_HOME);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_TASK_ON_HOME);
                 this.startActivity(intent);
                 finish();
                 return true;
